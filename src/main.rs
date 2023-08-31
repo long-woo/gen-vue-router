@@ -1,19 +1,20 @@
-use clap::Parser;
+// use glob::glob;
 
-#[derive(Parser, Debug)]
-#[clap(author, version, about, long_about = None)]
-struct Args {
-    #[clap(short, long)]
-    input: String,
-
-    #[arg(short, long, default_value_t = 1)]
-    count: u8,
-}
+// use clap::App;
 
 fn main() {
-   let args = Args::parse();
+//    let cli = load_yaml!("cli.yml");
+//    let matches = App::from_yaml(cli).get_matches();
 
-   for _ in 0..args.count {
-       println!("{}", args.input);
-   }
+//    println!("matches: {:?}", matches);
 }
+
+// 获取 views 目录所有 vue 文件
+// fn get_views(input: String) -> Vec<String> {
+//     let mut views = Vec::new();
+//     for entry in glob(input +"views/**/*.vue").unwrap() {
+//         let entry = entry.unwrap();
+//         views.push(entry.to_str().unwrap().to_string());
+//     }
+//     views
+// }

@@ -1,0 +1,9 @@
+name: gvr
+version: 1.0.0
+author: loong.woo
+about: vue 视图文件生成路由配置
+
+args:
+  - INPUT:
+    help: views 文件目录
+    required: true
